@@ -2,6 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="Description" content="Ejercicio 3 de programacion web. Metadatos y formularios">
+	<meta name="author" content="Angel Vital">
+	<meta name="keywords" content="Programación Web, form, register, metadata">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Ejercicio 2</title>
 </head>
@@ -14,7 +17,7 @@
 
 	<div>
 		<h3>Sobre mí</h3>
-		<p>Mi nommbre en Angel, soy estudiante de quinto semestre en la carrera de <i>Ingeniería en Desarollo de Software</i> en la Universiad Autónoma de Baja California Sur. <br> Para saber más sobre mi carrera haz <a target="_blank" href="https://www.uabcs.mx/dasc/ingenieria-en-desarrollo-de-software-plan-2022/">click aquí</a>
+		<p>Mi nombre en Angel, soy estudiante de quinto semestre en la carrera de <i>Ingeniería en Desarollo de Software</i> en la Universiad Autónoma de Baja California Sur. <br> Para saber más sobre mi carrera haz <a target="_blank" href="https://www.uabcs.mx/dasc/ingenieria-en-desarrollo-de-software-plan-2022/">click aquí</a>
 		</p>
 	</div>
 
@@ -111,6 +114,46 @@
 		</table>
 		<hr>
 	</div>
+
+	<form action="/submit" method="post">
+		<fieldset>
+			<legend>Gracias por tu visita</legend>
+			<label for="email">Email</label>
+			<input 
+			type="email" name="email" id="email" placeholder="Ingresa tu correo aquí" 
+			value="correo@correo.com" required><br><br>
+
+			<label>
+				Nombre
+				<textarea required name="nombre" rows="10" placeholder="Ingresa tu nombre"></textarea>
+			</label><br><br>
+
+			<label for="carreer">Elige tu carrera</label>
+			<select name="carrera" id="carrera">
+				<option value="ids">Ingeniería en Desarrollo de Software</option>
+				<option value="itc">Ingeniería en Tecnología Computacional</option>
+				<option value="lati">Licenciatura en administración de tecnologías de la información</option>
+				<option value="cib">Ingeniería en ciberseguridad</option>
+			</select><br><br>
+
+			<label for="semestre">Semestre</label>
+			<input type="text" minlength="5" maxlength="15" id="semester" name="semestre" list="semestres">
+			<datalist id="semesters" name="semester">
+				<option>Primero</option>
+				<option>Segundo</option>
+				<option>Tercero</option>
+				<option>Cuarto</option>
+				<option>Quinto</option>
+				<option>Sexto</option>
+				<option>Septimo</option>
+				<option>Octavo</option>
+				<option>Noveno</option>
+			</datalist><br><br>
+
+			<button type="submit">Enviar</button>
+		</fieldset>
+			
+	</form>
 
 	<div>
 		<br>
