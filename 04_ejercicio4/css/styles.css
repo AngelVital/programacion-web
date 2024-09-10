@@ -1,0 +1,31 @@
+body {
+	background-color: #dfdb7f;
+}
+
+#header {
+	font-family: georgia;
+}
+
+h3 {
+	font-family: georgia;
+}
+
+p {
+	font-family: arial;
+}
+
+#table-title {
+	background-color: #b3df7f;
+}
+
+th.table-subtitle {
+	background-color: #83df7f;
+}
+
+tbody.table-teachers {
+	background-color: #7fdfab;
+}
+
+#contact-form {
+	border-width: thick;
+}
