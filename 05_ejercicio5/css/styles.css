@@ -1,0 +1,68 @@
+header{
+	text-align: center;
+}
+
+body{
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+#tarjeta{
+	width: 40%;
+	border: 3px;
+	border-style: groove;
+	border-radius: 10%;
+	display: inline-block;
+	overflow: hidden;
+	padding: 2% 2% 2% 2%; 
+
+	main{
+		border: none;
+		img{
+			background-color: white;
+			display: inline-block;
+			width: 100%;
+			border-radius: 10% 10% 0 0;
+		}
+	}
+
+	article{
+		width: 100%;
+		height: 100%;
+		padding: 0% 2% 0% 2%;
+	}
+
+	h2{
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+
+	p{
+		display: inline-block;
+		width: 80%;
+		text-align: justify;
+	}
+
+	footer{
+		text-align: center;
+		button{
+			border-style: groove;
+			border-radius: 10px;
+			display: inline-block;
+			width: 25%;
+			cursor: pointer;
+		}
+		button:hover{
+			scale: 1.05;
+			color: blue;
+		}
+	}
+}
+
+#tarjeta:hover{
+	img{
+		transition: transform 0.3s ease;
+		transform: scale(1.1);
+	}
+}
