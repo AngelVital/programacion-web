@@ -7,4 +7,3 @@ HTML
 CSS
 1. [05: Diseño de tarjeta](/05_ejercicio5/index.html)
 2. [06: Sticky Header](/06_ejercicio6/index.html)
-3. 
