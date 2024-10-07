@@ -1,3 +1,21 @@
+:root {
+	--color-fondo: #C3BAAA;
+	--color-header: #91818A;
+	--color-header-hover: #444;
+	--color-dropdown-bg: #333;
+	--color-texto: white;
+
+	--fuente-titulo: 'Poppins', sans-serif;
+	--fuente-texto: 'Roboto', sans-serif;
+
+	--padding-base: 20px;
+	--header-height: 80px;
+	--border-radius: 10%;
+	--button-border-radius: 10px;
+
+	--shadow-box: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,12 +24,12 @@
 
 body {
 	margin: 0; 
-	background-color: #C3BAAA;
-	font-family: 'Roboto', sans-serif;
+	background-color: var(--color-fondo);
+	font-family: var(--fuente-texto);
 }
 
 .content {
-	padding: 20px;
+	padding: var(--padding-base);
 }
 
 header {
@@ -19,18 +37,18 @@ header {
     top: 0;
     display: flex;
     width: 100%; 
-    height: 80px; 
+    height: var(--header-height); 
     justify-content: left; 
     align-items: center; 
-    background-color: #91818A;
-    color: white;
+    background-color: var(--color-header);
+    color: var(--color-texto);
     z-index: 200;
 }
 
 #caja_logo {
     flex: 0 0 auto; 
     height: 100%; 
-    margin-left: 15px;
+    margin-left: calc(var(--padding-base) / 4);
 }
 
 #logo {
@@ -39,27 +57,15 @@ header {
     object-fit: contain; 
 }
 
-
 #caja_titulo {
     text-align: left; 
-    padding-left: 20px; 
+    padding-left: calc(var(--padding-base) / 2); 
 }
 
 nav {
 	justify-content: right;
-}
-
-h1 {
-    color: white; 
-}
-
-h2, p {
-	font-family: poppins;
-}
-
-nav {
 	margin-left: auto;
-	background-color: #91818A; 
+	background-color: var(--color-header); 
 }
 
 nav ul {
@@ -69,18 +75,18 @@ nav ul {
 
 nav ul li {
 	position: relative; 
-	margin-right: 20px; 
+	margin-right: var(--padding-base); 
 }
 
 nav ul li a {
 	display: block;
-	padding: 15px 20px;
-	color: white;
+	padding: calc(var(--padding-base) / 2);
+	color: var(--color-texto);
 	text-decoration: none;
 }
 
 nav ul li:hover {
-	background-color: #444; 
+	background-color: var(--color-header-hover); 
 }
 
 nav ul .dropdown {
@@ -88,7 +94,7 @@ nav ul .dropdown {
 	position: absolute; 
 	top: 100%; 
 	left: 0;
-	background-color: #333; 
+	background-color: var(--color-dropdown-bg); 
 	z-index: 1; 
 }
 
@@ -101,29 +107,27 @@ nav ul .dropdown li {
 }
 
 nav ul .dropdown li a {
-	padding: 10px 20px; 
-	color: white; 
+	padding: calc(var(--padding-base) / 2); 
+	color: var(--color-texto); 
 }
 
 #tarjetas-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	gap: 20px;
+	gap: calc(var(--padding-base) / 2);
 }
 
 .tarjeta {
-	width: 30%;
-	border: 3px;
-	border-style: groove;
-	border-radius: 10%;
+	width: clamp(250px, 30%, 350px);
+	border: 3px groove;
+	border-radius: var(--border-radius);
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
-	padding: 2%;
-	padding-bottom: 1%;
+	padding: calc(var(--padding-base) / 2);
 	background-color: white;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	box-shadow: var(--shadow-box);
 }
 
 .tarjeta main {
@@ -133,7 +137,7 @@ nav ul .dropdown li a {
 
 .tarjeta main img {
 	width: 100%;
-	border-radius: 10% 10% 0 0;
+	border-radius: var(--border-radius) var(--border-radius) 0 0;
 	transition: transform 0.3s ease;
 }
 
@@ -143,27 +147,29 @@ nav ul .dropdown li a {
 
 .tarjeta article {
 	width: 100%;
-	padding: 0 2%;
+	padding: 0 calc(var(--padding-base) / 2);
 	text-align: center;
 }
 
 .tarjeta h2 {
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: calc(var(--padding-base) / 2);
+	font-family: var(--fuente-titulo);
 }
 
 .tarjeta p {
 	text-align: justify;
+	font-family: var(--fuente-texto);
 }
 
 .tarjeta footer {
-	margin-top: 20px;
+	margin-top: var(--padding-base);
 	text-align: center;
 }
 
 .tarjeta footer button {
 	border-style: groove;
-	border-radius: 10px;
+	border-radius: var(--button-border-radius);
 	width: 50%;
 	cursor: pointer;
 }
