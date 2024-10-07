@@ -1,0 +1,152 @@
+body {
+    margin: 0; 
+    background-color: #C9D7F8;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+	padding: 20px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    width: 100%; 
+    height: 10vw;
+    justify-content: left;
+    background-color: #083858;
+    font-family: 'Poppins', serif;
+    color: white;
+    z-index: 200;
+}
+
+#caja_logo {
+    flex: 0 0 auto; 
+}
+
+#logo {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+h3 {
+    color: #083858;
+}
+
+h1 {
+	margin-bottom: 5px;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+#table-title {
+    background-color: #b3df7f;
+}
+
+th.table-subtitle {
+    background-color: #83df7f;
+}
+
+tbody.table-teachers {
+    background-color: #7fdfab;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f5ff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #083858;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #083858;
+    box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+    outline: none;
+}
+
+label {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #083858;
+    margin-bottom: 5px;
+    display: block;
+}
+
+button {
+    background-color: #083858;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0a4a77;
+    transform: translateY(-2px); 
+}
+
+button:active {
+    background-color: #062b4e;
+    transform: scale(0.98); 
+}
+
+textarea {
+    resize: vertical; 
+    min-height: 50px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+legend {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #083858;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    border: none; 
+    padding: 0;
+}
+
+
+
+
