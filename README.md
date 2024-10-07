@@ -7,4 +7,4 @@ HTML
 CSS
 1. [05: Diseño de tarjeta](/05_ejercicio5/index.html)
 2. [06: Sticky Header](/06_ejercicio6/index.html)
-3. [06: Formulario cob estilos](/07_ejercicio7/index.html)
+3. [06: Formulario con estilos](/07_ejercicio7/index.html)
