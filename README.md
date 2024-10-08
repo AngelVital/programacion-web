@@ -11,3 +11,4 @@ CSS
 4. [08: Sitio con tarjetas](/08_ejercicio8/index.html)
 5. [09: CSS con funciones y variables](/09_ejercicio9/index.html)
 6. [10: Grid CSS](/10_ejercicio10/index.html)
+7. [11: Sitio responsivo](/11_ejercicio11/index.html)
