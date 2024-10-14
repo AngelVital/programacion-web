@@ -10,7 +10,7 @@
 <body>
 	<header>
 		<div id="caja_logo">
-			<img id="logo" src="img/logo.png" alt="Logo de Velita de oro">
+			<img id="logo" src="img/logo.png" alt="logo">
 		</div>
 		<div id="caja_titulo">
 			<h1>Velita de oro</h1>
@@ -32,6 +32,17 @@
 			</ul>
 		</nav>
 	</header>
+
+	<div id="contenedor-hero">
+		<img src="img/hero.webp" alt="Colección velas frutales">
+		<div id="contenedor-texto-hero">
+			<a href="Productos.html">
+				<button type="button" class="btn btn-primary btn-lg boton-personalizado">Ir a la colección</button>
+			</a>
+		</div>
+	</div>
+
+	
 
 	<div id="carousel" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-inner">
@@ -56,13 +67,42 @@
 	</div>
 
 	<div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	    <p class="texto-descripcion">Haz de tu casa un templo del relax con un simple gesto. Nuestras velas aromáticas convierten los ambientes en esa zona de desconexión que tanto te mereces.</p>
 	</div>
+
+	<div id="formulario-suscripcion" class="text-center">
+	    <h2>Suscríbete a nuestras Noticias</h2>
+	    <p>Consigue un 10% de descuento en tu primer pedido. Además, accede a nuevos productos y descuentos exclusivos.</p>
+	    
+	    <form id="form-suscripcion">
+	        <div class="input-group mb-3">
+	            <input type="text" id="nombre" class="form-control" placeholder="Nombre" required>
+	            <input type="email" id="email" class="form-control" placeholder="Email" required>
+	        </div>
+	        <div class="form-check">
+	            <input type="checkbox" id="politica" class="form-check-input" required>
+	            <label for="politica" class="form-check-label">He leído y acepto el Aviso Legal y la Política de Privacidad.</label>
+	        </div>
+	        <button type="submit" class="btn btn-primary">SUSCRÍBETE</button>
+	    </form>
+	</div>
+
+
+
+
+
+	<footer class="footer-pagina">
+	    <div class="container">
+	        <p>© 2024 Velita de oro. Todos los derechos reservados.</p>
+	        <p>Contáctanos: <a href="mailto:contacto@velitadeoro.com">contacto@velitadeoro.com</a></p>
+	        <div>
+	            <a href="#">Facebook</a>
+	            <a href="#">Instagram</a>
+	            <a href="#">Twitter</a>
+	        </div>
+	    </div>
+	</footer>
+
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
