@@ -1,0 +1,59 @@
+body {
+	background-color: white;
+	color: black;
+}
+
+#contenedor {
+	text-align: center;
+	padding: 50px;
+	border-radius: 10px;
+	width: 60%;
+	border: 2px;
+}
+
+button {
+	padding: 20px;
+	margin: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#rojo {
+	background-color: red;
+	color: white;
+}
+
+.rojo {
+	background-color: red;
+	color: white;
+}
+
+#verde {
+	background-color: green;
+	color: white;
+}
+
+.verde {
+	background-color: green;
+	color: white;
+}
+
+#azul {
+	background-color: blue;
+	color: white;
+}
+
+.azul {
+	background-color: blue;
+	color: white;
+}
+
+#blanco {
+	background-color: white;
+	color: black;
+}
+
+.blanco {
+	background-color: white;
+	color: black;
+}
