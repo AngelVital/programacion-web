@@ -16,3 +16,4 @@ CSS
 
 JavaScript
 1. [13: Calculadora](/13_ejercicio1JS/index.html)
+2. [14: Cambio de color de fondo](/14_ejercicio2JS/index.html)
