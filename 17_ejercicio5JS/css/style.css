@@ -1,0 +1,43 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#catInfo {
+    background-color: #fff;
+    padding: 15px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px; 
+    margin: 0 auto;
+    text-align: left;
+}
+
+#catInfo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#catInfo h2 {
+    font-size: 1.25rem; 
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#catInfo p {
+    font-size: 0.9rem; 
+    color: #666;
+    margin: 5px 0;
+}
